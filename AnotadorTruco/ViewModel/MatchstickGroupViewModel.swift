@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct MatchstickGroupView: View {
+struct MatchstickGroupViewModel: View {
     let count: Int
 
     var body: some View {
@@ -42,5 +42,5 @@ struct MatchstickGroupView: View {
 }
 
 #Preview {
-    MatchstickGroupView(count: 5)
+    MatchstickGroupViewModel(count: 5)
 }

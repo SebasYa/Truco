@@ -19,7 +19,7 @@ struct MatchstickGridView: View {
                         .background(Color.gray)
                         .padding(.vertical, 10)
                 }
-                MatchstickGroupView(count: min(points - index * 5, 5))
+                MatchstickGroupViewModel(count: min(points - index * 5, 5))
                     .padding(5)
             }
         }
@@ -33,7 +33,7 @@ struct MatchstickGridView: View {
 
 /*
 •    0..<(points / 5 + (points % 5 > 0 ? 1 : 0)) es el rango de la iteracion.
-•    points / 5 calcula cuantos grupos completos de 5 fosforos hay.
+•    (points / 5) calcula cuantos grupos completos de 5 fosforos hay.
 •    (points % 5 > 0 ? 1 : 0) agrega 1 al numero total de grupos si hay un residuo al dividir los puntos por 5 (es decir, si hay fósforos sobrantes que no forman un grupo completo de 5).
 •    La combinacion de ambos (points / 5 + (points % 5 > 0 ? 1 : 0)) asegura que se itere sobre todos los grupos completos y un grupo adicional si hay fosforos sobrantes.
 

@@ -8,25 +8,35 @@
 
 /* Begin PBXBuildFile section */
 		DB4A54A52C4E404B00C70286 /* AnotadorTrucoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4A54A42C4E404B00C70286 /* AnotadorTrucoApp.swift */; };
-		DB4A54A72C4E404B00C70286 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4A54A62C4E404B00C70286 /* ContentView.swift */; };
+		DB4A54A72C4E404B00C70286 /* AnotadorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4A54A62C4E404B00C70286 /* AnotadorView.swift */; };
 		DB4A54A92C4E404D00C70286 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB4A54A82C4E404D00C70286 /* Assets.xcassets */; };
 		DB4A54AC2C4E404D00C70286 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB4A54AB2C4E404D00C70286 /* Preview Assets.xcassets */; };
 		DB4A54B32C4E408C00C70286 /* MatchstickView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4A54B22C4E408C00C70286 /* MatchstickView.swift */; };
 		DB4A54B52C4E40D900C70286 /* Matchstick.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4A54B42C4E40D900C70286 /* Matchstick.swift */; };
 		DB4A54B72C4E466200C70286 /* MatchstickGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4A54B62C4E466200C70286 /* MatchstickGridView.swift */; };
-		DB4A54B92C4E467D00C70286 /* MatchstickGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4A54B82C4E467D00C70286 /* MatchstickGroupView.swift */; };
+		DB4A54B92C4E467D00C70286 /* MatchstickGroupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4A54B82C4E467D00C70286 /* MatchstickGroupViewModel.swift */; };
+		DB4A54BB2C4F11A100C70286 /* WinningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4A54BA2C4F11A100C70286 /* WinningView.swift */; };
+		DB4A54BD2C4F11AB00C70286 /* LoosingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4A54BC2C4F11AB00C70286 /* LoosingView.swift */; };
+		DB4A54C12C4F15A600C70286 /* MyParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = DB4A54C02C4F15A600C70286 /* MyParticle.sks */; };
+		DB4A54C32C4F1E8400C70286 /* ParticleSceneModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4A54C22C4F1E8400C70286 /* ParticleSceneModel.swift */; };
+		DB4A54C52C4F1FD100C70286 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4A54C42C4F1FD100C70286 /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DB4A54A12C4E404B00C70286 /* AnotadorTruco.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnotadorTruco.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB4A54A42C4E404B00C70286 /* AnotadorTrucoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnotadorTrucoApp.swift; sourceTree = "<group>"; };
-		DB4A54A62C4E404B00C70286 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DB4A54A62C4E404B00C70286 /* AnotadorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnotadorView.swift; sourceTree = "<group>"; };
 		DB4A54A82C4E404D00C70286 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB4A54AB2C4E404D00C70286 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DB4A54B22C4E408C00C70286 /* MatchstickView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchstickView.swift; sourceTree = "<group>"; };
 		DB4A54B42C4E40D900C70286 /* Matchstick.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matchstick.swift; sourceTree = "<group>"; };
 		DB4A54B62C4E466200C70286 /* MatchstickGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchstickGridView.swift; sourceTree = "<group>"; };
-		DB4A54B82C4E467D00C70286 /* MatchstickGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchstickGroupView.swift; sourceTree = "<group>"; };
+		DB4A54B82C4E467D00C70286 /* MatchstickGroupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchstickGroupViewModel.swift; sourceTree = "<group>"; };
+		DB4A54BA2C4F11A100C70286 /* WinningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinningView.swift; sourceTree = "<group>"; };
+		DB4A54BC2C4F11AB00C70286 /* LoosingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoosingView.swift; sourceTree = "<group>"; };
+		DB4A54C02C4F15A600C70286 /* MyParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MyParticle.sks; sourceTree = "<group>"; };
+		DB4A54C22C4F1E8400C70286 /* ParticleSceneModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticleSceneModel.swift; sourceTree = "<group>"; };
+		DB4A54C42C4F1FD100C70286 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,11 +70,10 @@
 			isa = PBXGroup;
 			children = (
 				DB4A54A42C4E404B00C70286 /* AnotadorTrucoApp.swift */,
-				DB4A54A62C4E404B00C70286 /* ContentView.swift */,
-				DB4A54B22C4E408C00C70286 /* MatchstickView.swift */,
-				DB4A54B42C4E40D900C70286 /* Matchstick.swift */,
-				DB4A54B62C4E466200C70286 /* MatchstickGridView.swift */,
-				DB4A54B82C4E467D00C70286 /* MatchstickGroupView.swift */,
+				DB4A54C42C4F1FD100C70286 /* ContentView.swift */,
+				DB4A54C82C5014B000C70286 /* Model */,
+				DB4A54C72C5014A800C70286 /* View */,
+				DB4A54C62C50149600C70286 /* ViewModel */,
 				DB4A54A82C4E404D00C70286 /* Assets.xcassets */,
 				DB4A54AA2C4E404D00C70286 /* Preview Content */,
 			);
@@ -77,6 +86,36 @@
 				DB4A54AB2C4E404D00C70286 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DB4A54C62C50149600C70286 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DB4A54B82C4E467D00C70286 /* MatchstickGroupViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DB4A54C72C5014A800C70286 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DB4A54A62C4E404B00C70286 /* AnotadorView.swift */,
+				DB4A54B62C4E466200C70286 /* MatchstickGridView.swift */,
+				DB4A54B22C4E408C00C70286 /* MatchstickView.swift */,
+				DB4A54BC2C4F11AB00C70286 /* LoosingView.swift */,
+				DB4A54BA2C4F11A100C70286 /* WinningView.swift */,
+				DB4A54C02C4F15A600C70286 /* MyParticle.sks */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DB4A54C82C5014B000C70286 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DB4A54B42C4E40D900C70286 /* Matchstick.swift */,
+				DB4A54C22C4F1E8400C70286 /* ParticleSceneModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB4A54AC2C4E404D00C70286 /* Preview Assets.xcassets in Resources */,
+				DB4A54C12C4F15A600C70286 /* MyParticle.sks in Resources */,
 				DB4A54A92C4E404D00C70286 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -149,12 +189,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB4A54A72C4E404B00C70286 /* ContentView.swift in Sources */,
+				DB4A54A72C4E404B00C70286 /* AnotadorView.swift in Sources */,
 				DB4A54B32C4E408C00C70286 /* MatchstickView.swift in Sources */,
+				DB4A54BD2C4F11AB00C70286 /* LoosingView.swift in Sources */,
+				DB4A54BB2C4F11A100C70286 /* WinningView.swift in Sources */,
 				DB4A54B52C4E40D900C70286 /* Matchstick.swift in Sources */,
 				DB4A54A52C4E404B00C70286 /* AnotadorTrucoApp.swift in Sources */,
+				DB4A54C52C4F1FD100C70286 /* ContentView.swift in Sources */,
+				DB4A54C32C4F1E8400C70286 /* ParticleSceneModel.swift in Sources */,
 				DB4A54B72C4E466200C70286 /* MatchstickGridView.swift in Sources */,
-				DB4A54B92C4E467D00C70286 /* MatchstickGroupView.swift in Sources */,
+				DB4A54B92C4E467D00C70286 /* MatchstickGroupViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
