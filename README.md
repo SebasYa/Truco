@@ -13,6 +13,12 @@ Truco is a scorekeeping application for the popular Argentinian card game, Truco
 - **Score Tracking**: Keep track of scores for each team.
 - **User-Friendly Interface**: Simple and clean design for easy use.
 
+ ## Technologies Used
+
+- ![Swift](https://img.shields.io/badge/Swift-FA7343?style=for-the-badge&logo=swift&logoColor=white)
+- ![SwiftUI](https://img.shields.io/badge/SwiftUI-000000?style=for-the-badge&logo=swift&logoColor=white)
+- ![Xcode](https://img.shields.io/badge/Xcode-1575F9?style=for-the-badge&logo=xcode&logoColor=white)
+
 ## Installation
 
 1. **Clone the repository**:
