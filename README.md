@@ -1,7 +1,7 @@
 # Truco - Scorekeeper
 
 <div align="center">
-<img src="[https://github.com/SebasYa/Truco/blob/main/Truco/Assets.xcassets/AppIcon.appiconset/1024.png?raw=true](https://github.com/SebasYa/Truco/blob/main/AnotadorTruco/Assets.xcassets/AppIcon.appiconset/Truco%20ImagenApp.png)" alt="App Icon" width="300">
+<img src="https://github.com/SebasYa/Truco/blob/main/AnotadorTruco/Assets.xcassets/AppIcon.appiconset/Truco%20ImagenApp.png" alt="App Icon" width="300">
 </div>
 
 ## Description
