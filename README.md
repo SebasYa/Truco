@@ -24,10 +24,7 @@ Truco is a scorekeeping application for the popular Argentinian card game, Truco
 2. **Open the project in Xcode**:
     - Navigate to the cloned project directory and open `Truco.xcodeproj`.
 
-3. **Install dependencies**:
-    - Make sure all necessary dependencies are installed and up-to-date.
-
-4. **Run the application**:
+3. **Run the application**:
     - Select your target device and run the application.
 
 ## Usage
