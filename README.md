@@ -12,7 +12,6 @@ Truco is a scorekeeping application for the popular Argentinian card game, Truco
 
 - **Score Tracking**: Keep track of scores for each team.
 - **User-Friendly Interface**: Simple and clean design for easy use.
-- **Customizable Settings**: Adjust game settings according to your preferences.
 
 ## Installation
 
