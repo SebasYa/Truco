@@ -9,8 +9,22 @@ final class ParticleScene: SKScene {
         backgroundColor = .clear
     }
 
-    override func didMove(to view: SKView) {
-        super.didMove(to: view)
+    func updateLayout(size: CGSize) {
+        guard size.width > 1, size.height > 1 else {
+            return
+        }
+
+        self.size = size
+
+        guard let emitter else {
+            return
+        }
+
+        configure(emitter: emitter, for: size)
+    }
+
+    func prepareForPresentation(size: CGSize) {
+        updateLayout(size: size)
 
         if emitter == nil {
             emitter = makeEmitter()
@@ -37,11 +51,6 @@ final class ParticleScene: SKScene {
         }
 
         configure(emitter: emitter, for: size)
-    }
-
-    override func willMove(from view: SKView) {
-        super.willMove(from: view)
-        emitter?.removeFromParent()
     }
 
     required init?(coder aDecoder: NSCoder) {

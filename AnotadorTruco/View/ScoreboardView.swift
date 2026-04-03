@@ -24,10 +24,10 @@ struct ScoreboardView: View {
                 }
 
                 HStack(spacing: 0) {
-                    teamHeader(title: Team.us.title, points: viewModel.ourPoints, horizontalOffset: -10)
+                    teamHeader(title: Team.us.title, points: viewModel.ourPoints, horizontalOffset: -5)
                         .frame(maxWidth: .infinity)
 
-                    teamHeader(title: Team.them.title, points: viewModel.theirPoints, horizontalOffset: 3)
+                    teamHeader(title: Team.them.title, points: viewModel.theirPoints, horizontalOffset: -5)
                         .frame(maxWidth: .infinity)
                 }
                 .padding(.top, 15)

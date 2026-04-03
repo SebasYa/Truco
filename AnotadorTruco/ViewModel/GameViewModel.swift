@@ -5,7 +5,6 @@ import Foundation
 final class GameViewModel: ObservableObject {
     @Published private(set) var ourPoints: Int
     @Published private(set) var theirPoints: Int
-    @Published private(set) var gameID = UUID()
 
     let maxScore: Int
 
@@ -22,7 +21,6 @@ final class GameViewModel: ObservableObject {
     func reset() {
         ourPoints = 0
         theirPoints = 0
-        gameID = UUID()
     }
 
     func addPoint(to team: Team) {
