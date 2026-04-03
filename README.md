@@ -11,51 +11,75 @@
 
 ## Description
 
-Truco is a scorekeeping application for the popular Argentinian card game, Truco. This app allows players to easily keep track of their scores during the game, providing an intuitive and user-friendly interface.
+Truco is an iOS scorekeeper for the Argentinian card game. The app focuses on one job: keeping the score clearly and quickly during a match.
 
 <img src="https://github.com/SebasYa/Truco/blob/main/GifTruco%20.gif" alt="App Demo" width="250"/>
 
+## Current Features
 
-## Features
+- Track points for both teams up to 30 points.
+- Show the current total score for each team.
+- Visualize points with grouped matchsticks.
+- Reset the game at any time.
+- Show a result screen with particle effects when the match ends.
 
-- **Score Tracking**: Keep track of scores for each team.
-- **User-Friendly Interface**: Simple and clean design for easy use.
+## Architecture
 
+The app now uses a lightweight MVVM structure:
+
+```text
+AnotadorTruco/
+  AnotadorTrucoApp.swift
+  ContentView.swift
+  View/
+    ScoreboardView.swift
+    MatchstickGridView.swift
+    MatchstickGroupView.swift
+    MatchstickView.swift
+    TeamControlsView.swift
+    ResultView.swift
+    WinningView.swift
+    LosingView.swift
+  ViewModel/
+    GameViewModel.swift
+  Model/
+    GameState.swift
+    Team.swift
+  Effects/
+    ParticleScene.swift
+```
 
 ## Installation
 
-1. **Clone the repository**:
+1. Clone the repository:
 
-    ```bash
-    git clone https://github.com/SebasYa/Truco.git
-    ```
+```bash
+git clone https://github.com/SebasYa/Truco.git
+```
 
-2. **Open the project in Xcode**:
-    - Navigate to the cloned project directory and open `Truco.xcodeproj`.
+2. Open the project in Xcode:
 
-3. **Run the application**:
-    - Select your target device and run the application.
+```bash
+open AnotadorTruco.xcodeproj
+```
+
+3. Select an iPhone simulator or device and run the app.
 
 ## Usage
 
-1. **App Launch**:
-    - On launching the app, you will see the main screen where you can start a new game.
-
-2. **Scorekeeping**:
-    - Enter scores for each team as the game progresses. The app will keep a running total of the scores.
-
-3. **Custom Settings**:
-    - Access settings to adjust the game rules and preferences according to your playing style.
+1. Start a new match from the main scoreboard.
+2. Use the `+` and `-` controls for each team.
+3. Reset the game whenever you want.
+4. When one team reaches 30 points, the app shows the corresponding result screen.
 
 ## Contribution
 
-Contributions are welcome! If you would like to contribute to this project, please follow these steps:
+Contributions are welcome. If you want to collaborate:
 
-1. **Fork the repository**.
-2. **Create a branch** for your feature (`git checkout -b feature/new-feature`).
-3. **Make your changes** and commit them (`git commit -m 'Add new feature'`).
-4. **Push your changes** to your fork (`git push origin feature/new-feature`).
-5. **Create a Pull Request** on GitHub.
+1. Fork the repository.
+2. Create a branch for your change.
+3. Make your edits and verify the app builds.
+4. Open a pull request with a short description of the change.
 
 ## License
 

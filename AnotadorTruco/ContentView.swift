@@ -1,27 +1,23 @@
-//
-//  ContentView.swift
-//  AnotadorTruco
-//
-//  Created by Sebastian Yanni on 22/07/2024.
-//
-
 import SwiftUI
 
 struct ContentView: View {
-    @State private var ourPoints = 0
-    @State private var theirPoints = 0
-    
+    @StateObject private var viewModel = GameViewModel()
+
     var body: some View {
-            VStack {
-                if ourPoints >= 30 {
-                    WinningView(anotador: AnotadorView(ourPoints: $ourPoints, theirPoints: $theirPoints))
-                } else if theirPoints >= 30 {
-                    LoosingView(anotador: AnotadorView(ourPoints: $ourPoints, theirPoints: $theirPoints))
-                } else {
-                    AnotadorView(ourPoints: $ourPoints, theirPoints: $theirPoints)
-                }
+        switch viewModel.gameState {
+        case .playing:
+            ScoreboardView(viewModel: viewModel)
+        case .finished(let winner):
+            switch winner {
+            case .us:
+                WinningView(onReset: { viewModel.reset() })
+                    .id(viewModel.gameID)
+            case .them:
+                LosingView(onReset: { viewModel.reset() })
+                    .id(viewModel.gameID)
             }
         }
+    }
 }
 
 #Preview {

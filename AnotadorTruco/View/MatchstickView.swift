@@ -1,25 +1,23 @@
-//
-//  Matchstick.swift
-//  AnotadorTruco
-//
-//  Created by Sebastian Yanni on 22/07/2024.
-//
-
 import SwiftUI
 
 struct MatchstickView: View {
-    let matchstick: Matchstick
+    let rotation: Angle
+    let animationValue: Int
 
     var body: some View {
         Image("Fosforo")
             .resizable()
-            .frame(width: matchstick.isCenter ? 30 : 30, height: 55)
-            .rotationEffect(.degrees(matchstick.isCenter ? 45 : 0))
-            .transition(.scale)
-            .animation(.easeInOut, value: matchstick)
+            .aspectRatio(contentMode: .fit)
+            .frame(width: 30, height: 55)
+            .rotationEffect(rotation)
+            .transition(.scale.combined(with: .opacity))
+            .animation(.easeInOut(duration: 0.2), value: animationValue)
     }
 }
 
 #Preview {
-    MatchstickView(matchstick: Matchstick(isCenter: true))
+    VStack(spacing: 24) {
+        MatchstickView(rotation: .degrees(0), animationValue: 3)
+        MatchstickView(rotation: .degrees(45), animationValue: 5)
+    }
 }
